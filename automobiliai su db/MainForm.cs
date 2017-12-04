@@ -16,5 +16,20 @@ namespace automobiliai_su_db
         {
             InitializeComponent();
         }
+
+        private void carsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.carsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.Cars' table. You can move, or remove it, as needed.
+            this.carsTableAdapter.Fill(this.databaseDataSet.Cars);
+
+        }
     }
 }
