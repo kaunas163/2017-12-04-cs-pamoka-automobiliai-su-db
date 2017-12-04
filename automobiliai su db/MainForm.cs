@@ -44,5 +44,21 @@ namespace automobiliai_su_db
         {
             Close();
         }
+
+        private void kazkasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var form = new NewCarForm())
+            {
+                form.ShowDialog();
+
+                if (form.DialogResult == DialogResult.OK)
+                {
+                    MessageBox.Show(form.Car.Make + "\n"
+                        + form.Car.Model + "\n"
+                        + form.Car.Year + "\n"
+                        + form.Car.Mileage);
+                }
+            }
+        }
     }
 }

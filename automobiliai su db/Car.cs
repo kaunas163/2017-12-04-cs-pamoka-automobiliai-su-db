@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace automobiliai_su_db
 {
-    class Car
+    public class Car
     {
         public string Make { get; private set; }
         public string Model { get; private set; }
