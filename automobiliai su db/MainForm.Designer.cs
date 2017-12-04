@@ -33,8 +33,13 @@
             this.carsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.carsTableAdapter = new automobiliai_su_db.DatabaseDataSetTableAdapters.CarsTableAdapter();
             this.tableAdapterManager = new automobiliai_su_db.DatabaseDataSetTableAdapters.TableAdapterManager();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.kazkasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // databaseDataSet
@@ -57,17 +62,49 @@
             this.tableAdapterManager.CarsTableAdapter = this.carsTableAdapter;
             this.tableAdapterManager.UpdateOrder = automobiliai_su_db.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kazkasToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(708, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // kazkasToolStripMenuItem
+            // 
+            this.kazkasToolStripMenuItem.Name = "kazkasToolStripMenuItem";
+            this.kazkasToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.kazkasToolStripMenuItem.Text = "Kazkas";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 24);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(708, 454);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 478);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Automobiliai";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsBindingSource)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -77,6 +114,9 @@
         private System.Windows.Forms.BindingSource carsBindingSource;
         private DatabaseDataSetTableAdapters.CarsTableAdapter carsTableAdapter;
         private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem kazkasToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
