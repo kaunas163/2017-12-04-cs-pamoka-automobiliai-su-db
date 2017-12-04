@@ -36,6 +36,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.kazkasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.atnaujintiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.istrintiPazymaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iseitiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -65,7 +68,10 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kazkasToolStripMenuItem});
+            this.kazkasToolStripMenuItem,
+            this.atnaujintiToolStripMenuItem,
+            this.istrintiPazymaToolStripMenuItem,
+            this.iseitiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(708, 24);
@@ -75,8 +81,8 @@
             // kazkasToolStripMenuItem
             // 
             this.kazkasToolStripMenuItem.Name = "kazkasToolStripMenuItem";
-            this.kazkasToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.kazkasToolStripMenuItem.Text = "Kazkas";
+            this.kazkasToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.kazkasToolStripMenuItem.Text = "Naujas";
             // 
             // dataGridView1
             // 
@@ -86,6 +92,25 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(708, 454);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // atnaujintiToolStripMenuItem
+            // 
+            this.atnaujintiToolStripMenuItem.Name = "atnaujintiToolStripMenuItem";
+            this.atnaujintiToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
+            this.atnaujintiToolStripMenuItem.Text = "Atnaujinti pazymeta";
+            // 
+            // istrintiPazymaToolStripMenuItem
+            // 
+            this.istrintiPazymaToolStripMenuItem.Name = "istrintiPazymaToolStripMenuItem";
+            this.istrintiPazymaToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.istrintiPazymaToolStripMenuItem.Text = "Istrinti pazymeta";
+            // 
+            // iseitiToolStripMenuItem
+            // 
+            this.iseitiToolStripMenuItem.Name = "iseitiToolStripMenuItem";
+            this.iseitiToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.iseitiToolStripMenuItem.Text = "Iseiti";
+            this.iseitiToolStripMenuItem.Click += new System.EventHandler(this.iseitiToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -117,6 +142,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem kazkasToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ToolStripMenuItem atnaujintiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem istrintiPazymaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iseitiToolStripMenuItem;
     }
 }
 
