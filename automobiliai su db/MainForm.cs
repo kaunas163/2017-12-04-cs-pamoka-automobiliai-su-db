@@ -34,7 +34,7 @@ namespace automobiliai_su_db
                 var carsTable = new DataTable(); // tuscia duomenu lentele
                 adapter.Fill(carsTable); // duomenu lentele uzpildys duomenimis is db
 
-                dataGridView1.DataSource = carsTable;
+                dataGridView1.DataSource = carsTable; // atvaizduoja duomenis formoje
 
                 // _connection.Close(); // kadangi usinge tai nereikia rasyti
             }
